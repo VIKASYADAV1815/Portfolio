@@ -1,0 +1,206 @@
+#home {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; /* Default layout: horizontal (side by side) */
+}
+
+
+.lefthome, .righthome {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.righthome img {
+    width: 55vh;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    border: 2px solid rgb(20, 190, 247);
+    border-radius: 50%; /* Circular image */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Only animate border and shadow */
+    position: relative; /* Ensure positioning for the box-shadow */
+    opacity: 0.3; /* Initial lower opacity */
+    animation: glowing-border 2s infinite; /* Add glowing animation */
+}
+
+/* Keyframes for glowing border effect */
+@keyframes glowing-border {
+    0% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        border-color: rgba(0, 0, 0, 0.749);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+        border-color: rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        border-color: rgb(0, 0, 0);
+    }
+    }
+
+/* Hover effect for the image */
+.righthome img:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    filter: drop-shadow(0 6px 12px rgba(92, 88, 89, 0.5));
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); /* Enhanced shadow effect */
+    opacity: 1; /* Full opacity on hover */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease; /* Smooth transitions */
+}
+
+
+.homedetails {
+    font-size: 2vmax;
+}
+
+/* Line1 - Improved font size and styling */
+.line1 {
+    font-size: 0.8em; /* Slightly larger font size for better visibility */
+    font-weight: 550; /* Slightly bold for emphasis */
+    color: rgb(20, 20, 20); /* Darker gray for stronger contrast */
+    margin-bottom: 12px; /* Slightly increased spacing between lines */
+    font-family: 'Verdana', 'Arial', sans-serif; /* Dynamic and modern font */
+}
+
+/* Line2 - Bold, Larger and Improved Gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.line2 {
+    font-size: 2.5em; /* Larger font size for emphasis */
+    font-weight: 700; /* Make the text bold */
+    background: linear-gradient(270deg, #3c3ce7, #f1380f8e, #34bcdb, #8e44ad); /* Multiple colors for the gradient */
+    background-size: 400% 400%; /* Allow the background to move */
+    animation: gradientAnimation 10s ease infinite; /* Animation properties */
+    background-clip: text;
+    color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Modern, elegant font */
+    margin-bottom: 15px; /* Adds spacing below for separation */
+    position: relative;
+    z-index: -2;
+}
+
+/* Line3 - Enhanced Font Style */
+.line3 {
+    font-size: 1.2em; /* Slightly larger font size for readability */
+    color: rgb(56, 206, 19); /* Soft dark gray */
+    font-weight: 100; /* Light font weight for contrast with line2 */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10
+    px; /* Spacing above */
+}
+
+.typing-effect-container {
+    font-size: 24px; /* Adjust the font size */
+    color: #6e7177cd; /* Set the text color */
+    text-align: start; /* Center the text */
+    margin-top: 20px; /* Add spacing above */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  /* Optional: Add animation or hover effects */
+  .typing-effect-container:hover {
+    color: #00bcd4; /* Change color on hover */
+    transition: color 0.3s ease;
+  }
+
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    padding: 20px;
+    gap: 15px; /* Space between buttons */
+    border-radius: 30px;
+    flex-direction: row; /* Default: buttons in a row */
+    align-items: center;
+    margin-top: 10px; /* Space above buttons */
+}
+
+/* Action button styling */
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px; /* Default larger button size */
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 255, 255, 0.514); 
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    font-size: 14px; /* Default font size */
+}
+
+/* Hover effect for action button */
+.action-button:hover {
+    background-color: aqua;
+    color: rgb(5, 5, 5);
+}
+@media (max-width: 768px) {
+    
+    #home {
+         flex-direction: column-reverse; /* Stack vertically on smaller screens */
+    }
+ 
+    .lefthome{
+ width: 100%;
+ height: 50vh;
+
+    }
+    .righthome {
+         width: 100%; /* Full width for each section */
+         height: 50vh; /* Allow height to adjust based on content */
+    }
+ 
+  
+    .homedetails {
+         font-size: 3vw; /* Responsive font size */
+         margin-top: 10vw;
+
+    }
+    .line1 {
+
+        font-size: 4vw;
+    }
+ 
+    .line2 {
+         font-size: 8vw; /* Responsive font size for line2 */
+    }
+
+    .line3{
+
+        font-size: 8vw;
+    }
+    
+.righthome img {
+    width: 40vh;
+    height: 40vh;
+    margin-top: 30vh; /* Adjust the margin to move the image slightly up */
+}
+    .button-container {
+         flex-direction: row; /* Stack buttons vertically on small screens */
+         align-items: center; /* Center buttons horizontally */
+    }
+    .action-button {
+        width: 80%; /* Button width 80% of the container */
+        padding: 12px 20px; /* Reduced padding for less height */
+        margin-bottom: 15px; /* Space between buttons when stacked */
+        font-size: 3vw; /* Reduced font size for better text fit */
+        text-align: center; /* Center the text inside the button */
+        white-space: nowrap; /* Prevent the text from wrapping */
+    }
+
+ }
+ 

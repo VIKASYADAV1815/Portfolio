@@ -1,0 +1,82 @@
+.card {
+    width: 90%;
+    max-width: 300px;
+    height: 176px;
+ /* Gradient with opacity */
+    background-size: 400% 400%; /* Allow for animation */
+    border-radius: 20px; /* Increased rounding for a more pronounced curve */
+    box-shadow: 2px 2px 10px rgb(0, 0, 0), 2px 2px 20px black; /* Soft shadow for depth */
+    position: relative; /* Ensure proper positioning for hoverc */
+    overflow: hidden; /* Prevent overflow of hoverc */
+    border: 2px solid #ffe600; /* Set border color */
+    animation: gradient 10s ease infinite; /* Animation for gradient */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    flex-shrink: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card-title {
+    position: relative; /* Change to relative for normal flow */
+    color: rgb(4, 0, 0); /* Sets the title color to black */
+    font-size: 24px; /* Set a smaller font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px 0 0 10px; /* Margin for spacing */
+}
+
+.description {
+    position: relative; /* Change to relative for normal flow */
+    font-weight: normal; /* Makes the description normal weight */
+    color: rgb(22, 22, 22); /* Sets the description color to gray */
+    margin: 5px 10px 0; /* Adds some space above and below */
+}
+
+.hoverc {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white for hover effect */
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    border-radius: 20px; /* Match the card's rounded corners */
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0; /* Ensure it is below the title */
+}
+
+.hoverc img {
+    width: 100%; /* Make the image fill the entire hoverc area */
+    height: 100%; /* Ensure the image fills the height */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    border-radius: 20px; /* Match the border radius of the hoverc */
+}
+
+/* Hover effect actions */
+.card:hover .hoverc {
+    transform: translateY(0%); /* Bring hoverc into view on hover */
+}
+
+.card:hover .card-title {
+    opacity: 0; /* Hide the title on hover */
+}
+.card:hover .description
+{
+    opacity: 0;
+}
+/* Additional hover styles for the card */
+.card:hover {
+    box-shadow: 0 2px 15px rgba(153, 138, 153, 0.459); /* 2px shadow on hover */
+  
+}
