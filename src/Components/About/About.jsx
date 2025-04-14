@@ -6,6 +6,7 @@ import grad from "../../assets/GRAD.jpeg";
 import mern from "../../assets/mern.jpg"; // Ensure this path is correct
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import CERTIFICATES from  "../../assets/VIKAS-CERTIFICATE.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -129,9 +130,19 @@ function About() {
               <li>DSA</li>
               <li>Front-End Developer</li>
             </ul>
+
+
           </article>
+
+          <a href={CERTIFICATES} target="_blank" className="glow-on-hover">CERTIFIACTES</a>
+
+
         </div>
+
+    
       </div>
+
+     
 
       <div className="rightabout" ref={cardsContainerRef}>
         <Card 
