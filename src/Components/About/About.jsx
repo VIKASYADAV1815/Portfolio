@@ -134,7 +134,7 @@ function About() {
 
           </article>
 
-          <a href={CERTIFICATES} target="_blank" className="glow-on-hover">CERTIFIACTES</a>
+          <a href={CERTIFICATES} target="_blank" className="glow-on-hover">CERTIFICATES</a>
 
 
         </div>
