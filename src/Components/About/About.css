@@ -17,7 +17,7 @@
     width: 160px;
     height: 50px;
     border: none;
-    top: 6rem;
+    top: 3rem;
     outline: none;
     display: flex;
     justify-content: center;
@@ -118,7 +118,7 @@
    top: 50px;
    gap: 20px;
    flex-direction: column;
-   margin-top: 20px; 
+   margin-top: 6vw; 
 }
 
 .about-details h2,
@@ -140,6 +140,7 @@
 
 .about-details span {
    color: rgb(38, 183, 250);
+   
 }
 
 .rightabout {
@@ -160,6 +161,10 @@
 @media(max-width:750px) {
    #about {
        flex-direction: column; /* Stack items vertically on mobile */
+   }
+   .about-details
+   {
+    margin-top: 5rem;
    }
    
    .leftabout,
