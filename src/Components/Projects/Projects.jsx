@@ -80,7 +80,7 @@ function Projects() {
           ref={(el) => (cardsRef.current[1] = el)}
           onClick={() => handleCardClick("https://vikasyadav1815.github.io/_JARVIS_/")}
         >
-          <Card title="JARVIS" desc="The Jarvis voice assistant is developed using HTML, CSS, and JavaScript to create an interactive user interface. This version of Jarvis operates on predefined commands only." image={JARVIS} />
+          <Card title="JARVIS" desc="The Jarvis voice assistant is developed using HTML, CSS, and JavaScript to create an interactive user interface. This version operates on predefined commands only. (use desktop for male jarvis voice)." image={JARVIS} />
         </div>
         <div
           className="card"
