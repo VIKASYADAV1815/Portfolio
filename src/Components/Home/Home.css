@@ -15,17 +15,15 @@
     justify-content: center;
 }
 .righthome img {
+    position: relative;
     width: 55vh;
     filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
     border: 2px solid rgb(20, 190, 247);
     border-radius: 50%; /* Circular image */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Only animate border and shadow */
-    position: relative; /* Ensure positioning for the box-shadow */
     opacity: 0.3; /* Initial lower opacity */
-    animation: glowing-border 2s infinite; /* Add glowing animation */
+    animation: glowing-border 2s infinite; /* Glowing border animation */
 }
 
-/* Keyframes for glowing border effect */
 @keyframes glowing-border {
     0% {
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
@@ -39,8 +37,7 @@
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
         border-color: rgb(0, 0, 0);
     }
-    }
-
+}
 /* Hover effect for the image */
 .righthome img:hover {
     transform: scale(1.2); /* Increase size on hover */

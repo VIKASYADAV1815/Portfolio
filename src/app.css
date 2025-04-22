@@ -1,0 +1,70 @@
+.app-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #1a1a1a;
+    color: #ffffff;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .loading-container canvas {
+    width: 100vw !important; /* Pura width, no gap */
+    height: 100vh !important; /* Pura height */
+    object-fit: cover; /* Aspect ratio maintain, pura cover */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Mobile ke liye */
+  @media (max-width: 768px) {
+    .loading-container canvas {
+      width: 100vw !important;
+      height: 100vh !important;
+      object-fit: cover;
+    }
+    .loading-container h2 {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Desktop ke liye */
+  @media (min-width: 769px) {
+    .loading-container canvas {
+      width: 100vw !important; /* Pura width, right side gap hatao */
+      height: 100vh !important;
+      object-fit: cover;
+      margin: 0; /* No centering */
+    }
+    .loading-container h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Watermark hide karo */
+  .loading-container a,
+  .spline-watermark,
+  a[href="https://spline.design"],
+  .spline-watermark-container,
+  [class*="spline"],
+  [class*="watermark"],
+  div[class*="Watermark"],
+  div[class*="spline"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
