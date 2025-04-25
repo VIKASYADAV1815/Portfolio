@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-scroll'; // react-scroll ka Link use kar
 import './Home.css';
-import my from '../../assets/port.jpeg';
+import my from '../../assets/dp.jpg';
 import TypingEffect from 'react-typing-effect';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
