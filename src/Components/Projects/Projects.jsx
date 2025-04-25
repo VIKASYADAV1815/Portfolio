@@ -20,6 +20,7 @@ import spotify from "../../assets/spotify.gif";
 import shoe from "../../assets/shoe.gif"
 import bee from "../../assets/bee.webp";
 import mac from "../../assets/mac1.gif";
+import zaara from "../../assets/zaara.jpg"
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -75,6 +76,17 @@ function Projects() {
     <div className="projects">
       <h1 ref={headingRef}>1+ YEARS EXPERIENCE IN WEB DEVELOPMENT</h1>
       <div className="slider">
+
+      <div
+          className="card"
+          ref={(el) => (cardsRef.current[1] = el)}
+          onClick={() => handleCardClick("https://whimsical-dolphin-4e2298.netlify.app/")}
+        >
+          <Card title="ZAARA" desc="Zaara is an advanced AI assistant designed to answer your questions through text & voice. Built with React and by the Google Gemini API, Zaara offers a seamless and intuitive experience" image={zaara} />
+        </div>
+
+
+
         <div
           className="card"
           ref={(el) => (cardsRef.current[1] = el)}
