@@ -62,19 +62,7 @@ text-decoration: none;
    outline: none;
 }
 
-/* Heading styles */
-.contact h1 {
-    margin-right: -20px;;
-    background: linear-gradient(270deg, #3c3ce7, #f1380f8e, #34bcdb, #8e44ad);  /* Blue to purple gradient */
-    background-clip: text;
-    color: transparent;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Modern, elegant font */
-    margin-bottom: 15px; /* Adds spacing below for separation */
-    position: relative;
-    z-index: 1;
-    font-size: 1.8rem;
-    animation: gradientAnimation 3s ease-in-out infinite; /* Animation applied here */
-}
+
 
 .contact p {
    background-color: rgb(244, 240, 234);

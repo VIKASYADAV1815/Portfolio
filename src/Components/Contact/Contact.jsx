@@ -117,7 +117,7 @@ function Contact() {
   return (
     <div className="contact-container">
       <div className="contact" style={{ backgroundImage: `url(${yourImage})` }}>
-        <h1>HELLO, MY NAME IS VIKAS</h1>
+    
         <p>Feel free to reach out to me using the form below:</p>
 
         <form ref={form} className="contact-form" onSubmit={sendEmail}>

@@ -144,7 +144,7 @@ function Projects() {
         <div
           className="card"
           ref={(el) => (cardsRef.current[4] = el)}
-          onClick={() => handleCardClick("https://vikas-macboo-kpro.netlify.app/")}
+          onClick={() => handleCardClick("https://stellular-churros-ec9c79.netlify.app/")}
         >
           <Card title="MACBOOK-PRO"  desc= "MacBook Pro landing page using React.js and React Three Fiber, featuring interactive 3D models for an immersive user experience.(for better experience use Laptop,computer)  " image={mac} />
         </div>
