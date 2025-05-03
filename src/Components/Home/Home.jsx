@@ -5,7 +5,7 @@ import my from '../../assets/dp.jpg';
 import TypingEffect from 'react-typing-effect';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
-import cv from '../../assets/vikas cv.pdf';
+import cv from '../../assets/VIKAS_CV.pdf';
 
 gsap.registerPlugin(ScrollTrigger);
 
