@@ -21,6 +21,7 @@
     animation: gradientAnimation 10s ease infinite;
     background-clip: text;
     color: transparent;
+    
 
 }
 
@@ -154,19 +155,42 @@
 .skills_projects {
     width: 100%;
     height: 100px;
-    background: rgba(255, 255, 255, 0);
-    box-shadow: 0 8px 32px 0 rgba(31, 131, 135, 0.37);
+    background: rgba(42, 42, 42, 0.936);
+    box-shadow: 0 8px 32px 0 rgba(5, 5, 5, 0.959);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(51, 49, 49, 0.18);
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-    border-bottom: 1px solid rgba(232, 218, 218, 0.18);
+    border: 1px solid rgba(9, 247, 243, 0.874);
+    border-top: 1px solid rgba(63, 56, 54, 0.333);
+    border-bottom: 1px solid rgba(63, 56, 54, 0.333);
     border-left: none;
     border-right: none;
     overflow-x: hidden; /* Changed to hidden for seamless effect */
     white-space: nowrap; /* Prevent wrapping of child elements */
     position: relative; /* For positioning */
 }
+
+/* Fade effect at both ends */
+.skills_projects::before,
+.skills_projects::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 25vw; /* Adjust width for fade size */
+    height: 120%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.skills_projects::before {
+    left: 0;
+    background: linear-gradient(to right, rgb(10, 10, 10), rgba(255, 255, 255, 0));
+}
+
+.skills_projects::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(10, 10, 10), rgba(255, 255, 255, 0));
+}
+
 
 .skill {
     display: inline-flex; /* Use inline-flex for horizontal alignment */
@@ -191,14 +215,13 @@
     height: 60px; /* Adjust as needed */
     width: 60px; /* Adjust as needed */
     opacity: 0.7;
-    box-shadow: 0 8px 6px -6px rgb(20, 20, 20); /* Only bottom shadow */
+   
     border-radius: 0 0 5px 2px;
     animation: fadeInUp 1s ease-out; /* Animation on load */
 }
 
 .skill img:hover {
     transform: scale(1.1) rotate(3deg); /* Slight scale and rotate effect */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
     filter: brightness(1.2); /* Slight brightness boost on hover */
 }
 
