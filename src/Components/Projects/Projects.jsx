@@ -77,12 +77,30 @@ function Projects() {
       <h1 ref={headingRef}>1+ YEARS EXPERIENCE IN WEB DEVELOPMENT</h1>
       <div className="slider">
 
+          <div
+          className="card"
+          ref={(el) => (cardsRef.current[1] = el)}
+          onClick={() => handleCardClick("https://splendid-moxie-aeeae7.netlify.app/")}
+        >
+          <Card title="FOOD ORDERING APP" desc="Developed a responsive food ordering app using React.js for the frontend.The application allows users to browse menus. enhancing the overall user experience." image={"https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/30476a70296615.5ba0d05812b87.gif"} />
+        </div>
+
+
+        <div
+          className="card"
+          ref={(el) => (cardsRef.current[1] = el)}
+          onClick={() => handleCardClick("https://soft-stroopwafel-41bd70.netlify.app/")}
+        >
+          <Card title="FACE-APP" desc="FaceApp revolutionizes the way you connect with others through video calls. Built with ReactJS for dynamic and responsive , and powered by Zegocloud for real-time communication" image={"https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Main_LowLight_3_Caption.gif"} />
+        </div>
+     
+     
       <div
           className="card"
           ref={(el) => (cardsRef.current[1] = el)}
           onClick={() => handleCardClick("https://whimsical-dolphin-4e2298.netlify.app/")}
         >
-          <Card title="ZAARA" desc="Zaara is an advanced AI assistant designed to answer your questions through text & voice. Built with React and by the Google Gemini API, Zaara offers a seamless and intuitive experience" image={zaara} />
+          <Card title="Voice-AI Assistant" desc="Zaara is an advanced AI assistant designed to answer your questions through text & voice. Built with React and by the Google Gemini API, Zaara offers a seamless and intuitive experience" image={zaara} />
         </div>
 
 
@@ -101,27 +119,15 @@ function Projects() {
         >
           <Card title="CHAT-BOT" desc="The chatbot project is developed using HTML, CSS, and JavaScript to create an interactive user interface. It integrates the Google Gemini API to enhance its conversational capabilities." image={AICB} />
         </div>
-        <div
-          className="card"
-          ref={(el) => (cardsRef.current[3] = el)}
-          onClick={() => handleCardClick("https://vikasyadav1815.github.io/Graphic-Era/")}
-        >
-          <Card title="GRAPHIC-ERA" desc="The project utilizes HTML, CSS, and JavaScript to create an interactive and responsive landing page for Graphic Era College." image={graphicera} />
-        </div>
+       
         <div
           className="card"
           ref={(el) => (cardsRef.current[0] = el)}
           onClick={() => handleCardClick("https://vikasyadav1815.github.io/VISION-PRO/")}
         >
-          <Card title="APPLE  VISION PRO"  desc= "This project leverages the Apple Vision Pro to create an engaging augmented application using HTML, CSS, and JavaScript. By using GSAP animations. inspired by (SHERIYANS CODING). " image={apple} />
+          <Card title="APPLE  VISION PRO"  desc= "This project leverages the Apple Vision Pro to create an engaging augmented application using HTML, CSS, and JavaScript. By using GSAP animations  lenis for smooth scrolling. " image={apple} />
         </div>
-        <div
-          className="card"
-          ref={(el) => (cardsRef.current[4] = el)}
-          onClick={() => handleCardClick("https://vikasyadav1815.github.io/spotify/")}
-        >
-          <Card title="SPOTIFY"  desc= "This project replicates the Spotify interface using HTML and CSS, featuring a responsive design that allows users to browse music playlists and albums effortlessly." image={spotify} />
-        </div>
+     
 
 
         <div
@@ -129,7 +135,7 @@ function Projects() {
           ref={(el) => (cardsRef.current[4] = el)}
           onClick={() => handleCardClick("https://vikasyadav1815.github.io/SHOE/")}
         >
-          <Card title="SHOES"  desc= "Explore our stylish and responsive shoe website, designed with HTML, CSS,GSAP and JavaScript, featuring an interactive user experience and seamless navigation." image={shoe} />
+          <Card title=" SHOE E-COMMERCE"  desc= "Explore our stylish and responsive shoe website, designed with HTML, CSS,GSAP and JavaScript, featuring an interactive user experience and seamless navigation." image={shoe} />
         </div>
 
         <div
@@ -137,7 +143,7 @@ function Projects() {
           ref={(el) => (cardsRef.current[4] = el)}
           onClick={() => handleCardClick("https://vikasyadav1815.github.io/BEE-ZONE/")}
         >
-          <Card title="BEE-ZONE"  desc= "The Bee Zone project is an interactive project that showcases a beautifully crafted 3D model of a bee using Three.js, GSAP ,HTML, CSS, and JavaScript. (for better experience use Laptop,computer)  " image={bee} />
+          <Card title="3D BEE-MODEL"  desc= "The Bee Zone project is an interactive project that showcases a beautifully crafted 3D model of a bee using Three.js, GSAP ,HTML, CSS, and JavaScript. (for better experience use Laptop,computer)  " image={bee} />
         </div>
 
 
@@ -147,6 +153,24 @@ function Projects() {
           onClick={() => handleCardClick("https://stellular-churros-ec9c79.netlify.app/")}
         >
           <Card title="MACBOOK-PRO"  desc= "MacBook Pro landing page using React.js and React Three Fiber, featuring interactive 3D models for an immersive user experience.(for better experience use Laptop,computer)  " image={mac} />
+        </div>
+
+
+         <div
+          className="card"
+          ref={(el) => (cardsRef.current[3] = el)}
+          onClick={() => handleCardClick("https://vikasyadav1815.github.io/Graphic-Era/")}
+        >
+          <Card title="GRAPHIC-ERA" desc="The project utilizes HTML, CSS, and JavaScript to create an interactive and responsive landing page for Graphic Era College." image={graphicera} />
+        </div>
+
+
+           <div
+          className="card"
+          ref={(el) => (cardsRef.current[4] = el)}
+          onClick={() => handleCardClick("https://vikasyadav1815.github.io/spotify/")}
+        >
+          <Card title="SPOTIFY"  desc= "This project replicates the Spotify interface using HTML and CSS, featuring a responsive design that allows users to browse music playlists and albums effortlessly." image={spotify} />
         </div>
 
 
